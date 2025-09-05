@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CodeLearn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CodeLearn</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for any questions or support</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@codelearn.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🕒</span>
+                                <div>
+                                    <h4>Support Hours</h4>
+                                    <p>Mon-Fri: 9AM-6PM EST</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h4>Follow Us</h4>
+                            <div class="social-links large">
+                                <a href="#" aria-label="Facebook">📘</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="LinkedIn">💼</a>
+                                <a href="#" aria-label="YouTube">📺</a>
+                                <a href="#" aria-label="Instagram">📷</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="courses">Course Information</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="billing">Billing Question</option>
+                                    <option value="partnership">Partnership</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                        
+                        <div id="form-status" class="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>How do I enroll in a course?</h4>
+                        <p>Visit our Courses page, select the course you're interested in, and click the enrollment button. You'll be guided through the registration process.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Are there prerequisites for courses?</h4>
+                        <p>Most beginner courses have no prerequisites. Advanced courses may require basic programming knowledge, which is clearly stated in the course description.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you offer certificates?</h4>
+                        <p>Yes, upon successful completion of a course, you'll receive a certificate of completion that you can add to your portfolio or resume.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What if I need help during a course?</h4>
+                        <p>We provide multiple support channels including instructor office hours, peer discussion forums, and technical support via email.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeLearn</h4>
+                    <p>Empowering students to master programming languages through comprehensive, hands-on learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="course-detail.html?course=python">Python</a></li>
+                        <li><a href="course-detail.html?course=javascript">JavaScript</a></li>
+                        <li><a href="course-detail.html?course=java">Java</a></li>
+                        <li><a href="course-detail.html?course=sql">SQL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

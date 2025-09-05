@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - CodeLearn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CodeLearn</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Course Header -->
+        <section class="course-header" id="courseHeader">
+            <div class="container">
+                <div class="course-header-content">
+                    <div class="course-info">
+                        <div class="breadcrumb">
+                            <a href="courses.html">Courses</a> > <span id="courseBreadcrumb">Course Details</span>
+                        </div>
+                        <div class="course-title-section">
+                            <div class="course-icon-header" id="courseIcon">🐍</div>
+                            <div>
+                                <h1 id="courseTitle">Python Programming</h1>
+                                <p id="courseSubtitle">Master Python from fundamentals to advanced topics</p>
+                            </div>
+                        </div>
+                        <div class="course-stats">
+                            <span class="course-stat">
+                                <span class="stat-icon">⏱️</span>
+                                <span id="courseDuration">8 weeks</span>
+                            </span>
+                            <span class="course-stat">
+                                <span class="stat-icon">📚</span>
+                                <span id="courseLevel">Beginner</span>
+                            </span>
+                            <span class="course-stat">
+                                <span class="stat-icon">👥</span>
+                                <span id="courseStudents">1,234 students</span>
+                            </span>
+                            <span class="course-stat">
+                                <span class="stat-icon">⭐</span>
+                                <span id="courseRating">4.8 (456 reviews)</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="course-enrollment">
+                        <div class="price-section">
+                            <span class="course-price-large" id="coursePrice">$99</span>
+                        </div>
+                        <button class="enroll-button">Enroll Now</button>
+                        <div class="course-features-summary">
+                            <div class="feature-item">✓ Lifetime access</div>
+                            <div class="feature-item">✓ Certificate of completion</div>
+                            <div class="feature-item">✓ 30-day money-back guarantee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content">
+            <div class="container">
+                <div class="content-layout">
+                    <!-- Main Content -->
+                    <div class="main-content">
+                        <!-- Course Overview -->
+                        <div class="content-section">
+                            <h2>Course Overview</h2>
+                            <div id="courseOverview">
+                                <p>This comprehensive Python course is designed to take you from a complete beginner to an advanced Python developer. You'll learn fundamental programming concepts, data structures, object-oriented programming, and how to build real-world applications.</p>
+                                
+                                <h3>What You'll Learn:</h3>
+                                <ul>
+                                    <li>Python syntax and fundamentals</li>
+                                    <li>Data types, variables, and operators</li>
+                                    <li>Control flow and functions</li>
+                                    <li>Data structures (lists, dictionaries, sets)</li>
+                                    <li>Object-oriented programming concepts</li>
+                                    <li>File handling and error management</li>
+                                    <li>Web development basics with Flask</li>
+                                    <li>Database integration</li>
+                                    <li>Building real-world projects</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Course Curriculum -->
+                        <div class="content-section">
+                            <h2>Course Curriculum</h2>
+                            <div class="curriculum" id="courseCurriculum">
+                                <div class="curriculum-module">
+                                    <div class="module-header">
+                                        <h3>Module 1: Python Basics</h3>
+                                        <span class="module-duration">Week 1-2</span>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Introduction to Python and Setup</span>
+                                            <span class="lesson-duration">15 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Variables and Data Types</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Operators and Expressions</span>
+                                            <span class="lesson-duration">20 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">📝</span>
+                                            <span class="lesson-title">Practice Exercise: Calculator</span>
+                                            <span class="lesson-duration">30 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-module">
+                                    <div class="module-header">
+                                        <h3>Module 2: Control Flow</h3>
+                                        <span class="module-duration">Week 2-3</span>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Conditional Statements</span>
+                                            <span class="lesson-duration">20 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Loops: for and while</span>
+                                            <span class="lesson-duration">30 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">📝</span>
+                                            <span class="lesson-title">Project: Number Guessing Game</span>
+                                            <span class="lesson-duration">45 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-module">
+                                    <div class="module-header">
+                                        <h3>Module 3: Data Structures</h3>
+                                        <span class="module-duration">Week 3-4</span>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Lists and List Methods</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Dictionaries and Sets</span>
+                                            <span class="lesson-duration">30 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Tuples and String Manipulation</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-module">
+                                    <div class="module-header">
+                                        <h3>Module 4: Functions and Modules</h3>
+                                        <span class="module-duration">Week 4-5</span>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Defining and Calling Functions</span>
+                                            <span class="lesson-duration">30 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Parameters and Return Values</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Modules and Packages</span>
+                                            <span class="lesson-duration">20 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-module">
+                                    <div class="module-header">
+                                        <h3>Module 5: Object-Oriented Programming</h3>
+                                        <span class="module-duration">Week 5-6</span>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Classes and Objects</span>
+                                            <span class="lesson-duration">35 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Inheritance and Polymorphism</span>
+                                            <span class="lesson-duration">40 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">📝</span>
+                                            <span class="lesson-title">Project: Bank Account System</span>
+                                            <span class="lesson-duration">60 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-module">
+                                    <div class="module-header">
+                                        <h3>Module 6: File Handling & Error Management</h3>
+                                        <span class="module-duration">Week 6-7</span>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Reading and Writing Files</span>
+                                            <span class="lesson-duration">30 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Exception Handling</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-module">
+                                    <div class="module-header">
+                                        <h3>Module 7: Web Development with Flask</h3>
+                                        <span class="module-duration">Week 7-8</span>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Introduction to Flask</span>
+                                            <span class="lesson-duration">20 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">▶️</span>
+                                            <span class="lesson-title">Routes and Templates</span>
+                                            <span class="lesson-duration">35 min</span>
+                                        </div>
+                                        <div class="lesson-item">
+                                            <span class="lesson-icon">📝</span>
+                                            <span class="lesson-title">Final Project: Personal Portfolio Website</span>
+                                            <span class="lesson-duration">90 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Instructor -->
+                        <div class="content-section">
+                            <h2>Your Instructor</h2>
+                            <div class="instructor-profile" id="instructorProfile">
+                                <div class="instructor-avatar-large">👨‍💻</div>
+                                <div class="instructor-details">
+                                    <h3>Alex Johnson</h3>
+                                    <p class="instructor-title">Senior Python Developer & Instructor</p>
+                                    <p class="instructor-bio">Alex has over 10 years of experience in software development and has been teaching Python for 5 years. He has worked with major tech companies and has helped thousands of students launch their programming careers.</p>
+                                    <div class="instructor-stats">
+                                        <span class="instructor-stat">⭐ 4.9 rating</span>
+                                        <span class="instructor-stat">👥 15,000+ students</span>
+                                        <span class="instructor-stat">📚 12 courses</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <!-- Course Features -->
+                        <div class="sidebar-section">
+                            <h3>This course includes:</h3>
+                            <ul class="course-features-list">
+                                <li>✓ 40+ hours of video content</li>
+                                <li>✓ 50+ coding exercises</li>
+                                <li>✓ 8 hands-on projects</li>
+                                <li>✓ Downloadable resources</li>
+                                <li>✓ Certificate of completion</li>
+                                <li>✓ Lifetime access</li>
+                                <li>✓ Mobile and desktop access</li>
+                                <li>✓ 30-day money-back guarantee</li>
+                            </ul>
+                        </div>
+
+                        <!-- Prerequisites -->
+                        <div class="sidebar-section">
+                            <h3>Prerequisites:</h3>
+                            <ul class="prerequisites-list">
+                                <li>No prior programming experience required</li>
+                                <li>Computer with internet connection</li>
+                                <li>Willingness to learn and practice</li>
+                            </ul>
+                        </div>
+
+                        <!-- Related Courses -->
+                        <div class="sidebar-section">
+                            <h3>Related Courses:</h3>
+                            <div class="related-courses">
+                                <a href="course-detail.html?course=python-data-science" class="related-course">
+                                    <span class="related-icon">📊</span>
+                                    <span class="related-title">Python Data Science</span>
+                                </a>
+                                <a href="course-detail.html?course=javascript" class="related-course">
+                                    <span class="related-icon">⚡</span>
+                                    <span class="related-title">JavaScript Fundamentals</span>
+                                </a>
+                                <a href="course-detail.html?course=sql" class="related-course">
+                                    <span class="related-icon">🗄️</span>
+                                    <span class="related-title">SQL Database</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeLearn</h4>
+                    <p>Empowering students to master programming languages through comprehensive, hands-on learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="course-detail.html?course=python">Python</a></li>
+                        <li><a href="course-detail.html?course=javascript">JavaScript</a></li>
+                        <li><a href="course-detail.html?course=java">Java</a></li>
+                        <li><a href="course-detail.html?course=sql">SQL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

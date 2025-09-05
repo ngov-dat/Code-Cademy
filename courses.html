@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CodeLearn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CodeLearn</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link active">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Courses Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Courses</h1>
+                <p>Explore our comprehensive programming courses designed for all skill levels</p>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="course-filters">
+            <div class="container">
+                <div class="filters-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search courses..." class="search-input">
+                        <button type="button" class="search-button">🔍</button>
+                    </div>
+                    
+                    <div class="filter-categories">
+                        <button class="filter-btn active" data-category="all">All Courses</button>
+                        <button class="filter-btn" data-category="beginner">Beginner</button>
+                        <button class="filter-btn" data-category="intermediate">Intermediate</button>
+                        <button class="filter-btn" data-category="advanced">Advanced</button>
+                        <button class="filter-btn" data-category="web">Web Development</button>
+                        <button class="filter-btn" data-category="data">Data Science</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Grid Section -->
+        <section class="courses-grid-section">
+            <div class="container">
+                <div class="courses-grid" id="coursesGrid">
+                    <!-- Python Course -->
+                    <div class="course-card-large" data-category="beginner data" data-title="Python Programming">
+                        <div class="course-header">
+                            <div class="course-icon-large">🐍</div>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Beginner</span>
+                                <span class="course-duration">8 weeks</span>
+                            </div>
+                        </div>
+                        <h3>Python Programming</h3>
+                        <p class="course-description">Master Python from fundamentals to advanced topics including data structures, web development, and automation.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 40+ hours content</span>
+                            <span class="feature">✓ Hands-on projects</span>
+                            <span class="feature">✓ Certificate included</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$99</span>
+                            <a href="course-detail.html?course=python" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Course -->
+                    <div class="course-card-large" data-category="beginner web" data-title="JavaScript Fundamentals">
+                        <div class="course-header">
+                            <div class="course-icon-large">⚡</div>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Beginner</span>
+                                <span class="course-duration">6 weeks</span>
+                            </div>
+                        </div>
+                        <h3>JavaScript Fundamentals</h3>
+                        <p class="course-description">Learn JavaScript for web development, from DOM manipulation to modern ES6+ features and frameworks.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 35+ hours content</span>
+                            <span class="feature">✓ Real-world projects</span>
+                            <span class="feature">✓ Modern ES6+ syntax</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$89</span>
+                            <a href="course-detail.html?course=javascript" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Java Course -->
+                    <div class="course-card-large" data-category="intermediate" data-title="Java Programming">
+                        <div class="course-header">
+                            <div class="course-icon-large">☕</div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration">10 weeks</span>
+                            </div>
+                        </div>
+                        <h3>Java Programming</h3>
+                        <p class="course-description">Build robust applications with Java, covering OOP principles, data structures, and enterprise development.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 50+ hours content</span>
+                            <span class="feature">✓ OOP mastery</span>
+                            <span class="feature">✓ Enterprise patterns</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$129</span>
+                            <a href="course-detail.html?course=java" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- SQL Course -->
+                    <div class="course-card-large" data-category="beginner data" data-title="SQL Database Fundamentals">
+                        <div class="course-header">
+                            <div class="course-icon-large">🗄️</div>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Beginner</span>
+                                <span class="course-duration">4 weeks</span>
+                            </div>
+                        </div>
+                        <h3>SQL Database Fundamentals</h3>
+                        <p class="course-description">Master database queries, design, and optimization with comprehensive SQL training.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 25+ hours content</span>
+                            <span class="feature">✓ Database design</span>
+                            <span class="feature">✓ Query optimization</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$69</span>
+                            <a href="course-detail.html?course=sql" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- C++ Course -->
+                    <div class="course-card-large" data-category="advanced" data-title="C++ Programming">
+                        <div class="course-header">
+                            <div class="course-icon-large">⚙️</div>
+                            <div class="course-meta">
+                                <span class="course-level advanced">Advanced</span>
+                                <span class="course-duration">12 weeks</span>
+                            </div>
+                        </div>
+                        <h3>C++ Programming</h3>
+                        <p class="course-description">Deep dive into C++ for system programming, game development, and high-performance applications.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 60+ hours content</span>
+                            <span class="feature">✓ Memory management</span>
+                            <span class="feature">✓ Advanced algorithms</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$149</span>
+                            <a href="course-detail.html?course=cpp" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- React Course -->
+                    <div class="course-card-large" data-category="intermediate web" data-title="React Development">
+                        <div class="course-header">
+                            <div class="course-icon-large">⚛️</div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration">8 weeks</span>
+                            </div>
+                        </div>
+                        <h3>React Development</h3>
+                        <p class="course-description">Build modern web applications with React, including hooks, state management, and best practices.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 45+ hours content</span>
+                            <span class="feature">✓ Modern React hooks</span>
+                            <span class="feature">✓ State management</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$119</span>
+                            <a href="course-detail.html?course=react" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Python Data Science -->
+                    <div class="course-card-large" data-category="intermediate data" data-title="Python Data Science">
+                        <div class="course-header">
+                            <div class="course-icon-large">📊</div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration">10 weeks</span>
+                            </div>
+                        </div>
+                        <h3>Python Data Science</h3>
+                        <p class="course-description">Learn data analysis, visualization, and machine learning using Python, pandas, and scikit-learn.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 55+ hours content</span>
+                            <span class="feature">✓ Real datasets</span>
+                            <span class="feature">✓ ML algorithms</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$139</span>
+                            <a href="course-detail.html?course=python-data-science" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Node.js Course -->
+                    <div class="course-card-large" data-category="intermediate web" data-title="Node.js Backend Development">
+                        <div class="course-header">
+                            <div class="course-icon-large">🟢</div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration">9 weeks</span>
+                            </div>
+                        </div>
+                        <h3>Node.js Backend Development</h3>
+                        <p class="course-description">Build scalable backend applications with Node.js, Express, and database integration.</p>
+                        <div class="course-features">
+                            <span class="feature">✓ 48+ hours content</span>
+                            <span class="feature">✓ API development</span>
+                            <span class="feature">✓ Database integration</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$109</span>
+                            <a href="course-detail.html?course=nodejs" class="course-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div id="noResults" class="no-results" style="display: none;">
+                    <h3>No courses found</h3>
+                    <p>Try adjusting your search or filter criteria</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Coding Journey?</h2>
+                    <p>Join thousands of students who have transformed their careers through our courses</p>
+                    <a href="contact.html" class="cta-button">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeLearn</h4>
+                    <p>Empowering students to master programming languages through comprehensive, hands-on learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="course-detail.html?course=python">Python</a></li>
+                        <li><a href="course-detail.html?course=javascript">JavaScript</a></li>
+                        <li><a href="course-detail.html?course=java">Java</a></li>
+                        <li><a href="course-detail.html?course=sql">SQL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
