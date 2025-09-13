@@ -1,212 +1,411 @@
-<!-- Updated index.html: Redesigned to be more similar to Codecademy.com, with enhanced hero section, features (courses), experience sections, testimonials, and a call-to-action footer. Added placeholders for sign-up and company logos. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0ZVLRY1R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0B0ZVLRY1R');
-</script>
-<!---gtag ends here--->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeLearn - Learn Programming for Free</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>EduTech Hub - Develop Your Skills</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Futuristic dark gradient */
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif; /* Futuristic font for headings */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: #00ffcc; /* Neon cyan for links */
+            text-decoration: none;
+        }
+
+        button {
+            background: linear-gradient(45deg, #00ffcc, #007bff);
+            border: none;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5); /* Neon glow */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.8);
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.5) 100%);
+            z-index: -1;
+        }
+
+        #hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ffcc;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        /* Companies Section */
+        #companies {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #companies h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        #companies ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        #companies li {
+            font-size: 1.8rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+            transition: transform 0.3s;
+        }
+
+        #companies li:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Experience Section */
+        #experience {
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        #experience h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #experience ul {
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #experience li {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+        }
+
+        #experience h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Platform Section */
+        #platform {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #platform h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #platform p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .platform-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.4);
+            margin-bottom: 20px;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        #testimonials h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonial {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+        }
+
+        .testimonial blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Animations Classes */
+        .animate-fade-in {
+            opacity: 0;
+        }
+
+        .animate-slide-up {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 3rem;
+            }
+
+            #companies ul {
+                flex-direction: column;
+            }
+
+            .testimonial {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>CodeLearn</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="courses.html" class="nav-link">Courses</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section: Inspired by Codecademy's hero, with skills development focus, sign-up prompt, and company logos -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Develop your skills</h1>
-                <p>Grow in your career and unlock new opportunities by learning in-demand skills in AI, data, coding, cybersecurity, and more.</p>
-                <a href="#signup" class="cta-button">Get started today</a>
-                <div class="signup-options">
-                    <p>Or sign up with</p>
-                    <button class="signup-btn">Google</button>
-                    <button class="signup-btn">Apple</button>
-                    <p>More ways to sign up</p>
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- Placeholder for code illustration or image -->
-                <pre class="code-illustration">
-                    <code>
-                        <span class="code-line">&lt;html&gt;</span>
-                        <span class="code-line">&nbsp;&nbsp;&lt;body&gt;</span>
-                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;</span>
-                        <span class="code-line">&nbsp;&nbsp;&lt;/body&gt;</span>
-                        <span class="code-line">&lt;/html&gt;</span>
-                    </code>
-                </pre>
-            </div>
-        </div>
-        <div class="companies">
-            <p>Our learners work at</p>
-            <ul class="company-logos">
-                <li>Meta</li>
-                <li>Microsoft</li>
-                <li>Google</li>
-                <li>Apple</li>
-                <li>Instagram</li>
-                <li>Spotify</li>
-                <li>Reddit</li>
-                <li>IBM</li>
-            </ul>
-        </div>
+    <section id="hero">
+        <h1>Develop Your Skills</h1>
+        <p>Grow in your career and unlock new opportunities by learning in-demand skills in AI, data, coding, cybersecurity, and more.</p>
+        <button>Get Started Today</button>
+        <p>Or sign up with</p>
+        <p>More ways to sign up</p>
     </section>
 
-    <!-- Features Section: Similar to Codecademy's "No matter your goal" with course cards -->
-    <section class="featured-courses">
-        <h2>No matter your goal, we have something for you</h2>
-        <div class="course-grid">
-            <div class="course-card" data-title="Python Programming" data-category="beginner python">
-                <span class="course-icon">🐍</span>
-                <h3>Python Programming</h3>
-                <p>Learn Python from basics to advanced topics including data structures, web development, and automation.</p>
-                <a href="course-detail.html?course=python" class="course-link">Learn More</a>
-            </div>
-            <div class="course-card" data-title="JavaScript" data-category="beginner javascript">
-                <span class="course-icon">⚡</span>
-                <h3>JavaScript</h3>
-                <p>Master JavaScript for web development, from DOM manipulation to modern ES6+ features and frameworks.</p>
-                <a href="course-detail.html?course=javascript" class="course-link">Learn More</a>
-            </div>
-            <div class="course-card" data-title="Java Programming" data-category="intermediate java">
-                <span class="course-icon">☕</span>
-                <h3>Java Programming</h3>
-                <p>Build robust applications with Java, covering OOP principles, data structures, and enterprise development.</p>
-                <a href="course-detail.html?course=java" class="course-link">Learn More</a>
-            </div>
-            <div class="course-card" data-title="Python Data Science" data-category="intermediate data-science">
-                <span class="course-icon">📊</span>
-                <h3>Python Data Science</h3>
-                <p>Data analysis and machine learning with Python.</p>
-                <a href="course-detail.html?course=python-data-science" class="course-link">Learn More</a>
-            </div>
-        </div>
+    <section id="companies" class="animate-slide-up">
+        <h2>Our Learners Work At</h2>
+        <ul>
+            <li>Meta</li>
+            <li>Microsoft</li>
+            <li>Google</li>
+            <li>Electronic Arts</li>
+            <li>Apple</li>
+            <li>Instagram</li>
+            <li>Spotify</li>
+            <li>Reddit</li>
+            <li>IBM</li>
+        </ul>
     </section>
 
-    <!-- Experience Section: Directly inspired by Codecademy's "Designed for progress" -->
-    <section class="experience">
-        <h2>Designed for progress</h2>
-        <div class="experience-grid">
-            <div class="experience-point">
-                <h3>Turn ambition into action</h3>
+    <section id="experience" class="animate-slide-up">
+        <h2>The Experience</h2>
+        <h3>Designed for Progress</h3>
+        <ul>
+            <li>
+                <h4>Turn Ambition into Action</h4>
                 <p>Find guided paths and interactive lessons no matter your skill level. Fuel your growth with in-demand subjects like AI, cloud, data, cybersecurity, and more.</p>
-            </div>
-            <div class="experience-point">
-                <h3>Gain hands-on expertise</h3>
-                <p>Build portfolio-worthy projects that stand out in a competitive job market. Grow in your career with prep for industry certifications.</p>
-            </div>
-            <div class="experience-point">
-                <h3>Transform your team</h3>
+            </li>
+            <li>
+                <h4>Gain Hands-On Expertise</h4>
+                <p>Build portfolio-worthy projects that stand out in a competitive job market. Grow in your career with prep for industry certifications from AWS, Microsoft, CompTIA, ISC2, and more.</p>
+            </li>
+            <li>
+                <h4>Transform Your Team</h4>
                 <p>Ensure you're meeting your unique business needs with flexible content assignment. Access an exclusive admin dashboard to easily manage and track team progress.</p>
-            </div>
-            <div class="experience-point">
-                <h3>Go further together</h3>
+            </li>
+            <li>
+                <h4>Go Further Together</h4>
                 <p>Get help when you need it, build your network, and learn together with access to exclusive events, clubs, study groups, and more in our global learner community.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="platform" class="animate-slide-up">
+        <h2>Learn by Doing</h2>
+        <p>Step by step guidance. Self-paced learning doesn't mean you're on your own. Our courses and paths give you helpful guidance every step of the way.</p>
+        <!-- Placeholder for images; replace with actual URLs if available -->
+        <img src="https://via.placeholder.com/600x400?text=Instruction+Panel" alt="Codecademy platform showing the instruction panel" class="platform-img">
+        <img src="https://via.placeholder.com/600x400?text=Instruction+Panel" alt="Codecademy platform showing the instruction panel" class="platform-img">
+    </section>
+
+    <section id="testimonials" class="animate-slide-up">
+        <h2>Real Success from Real Learners</h2>
+        <p>With the right skills, anything’s possible. See how real learners are evolving their careers with EduTech Hub.</p>
+        <div class="testimonial">
+            <!-- Placeholder image -->
+            <img src="https://via.placeholder.com/100?text=Joshua" alt="Portrait of Joshua Lange">
+            <div>
+                <blockquote>I feel like I’ve gained a valuable skill set that looks great on my CV. You don’t have to change careers; you can make your current job better, more efficient, and make your life easier.</blockquote>
+                <p>- Joshua Lange, Research Scientist from Stockholm, Sweden</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100?text=Shabana" alt="Portrait of Shabana Khatau">
+            <div>
+                <blockquote>I wasted quite a bit of time before learning about EduTech Hub. Anyone who would come up to me, I would direct them straight to EduTech Hub. Don’t waste any time on anyone else; just start there.</blockquote>
+                <p>- Shabana Khatau, Systems and Applications Advisor from London, England</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100?text=Jimmy" alt="Portrait of Jimmy Soto">
+            <div>
+                <blockquote>EduTech Hub played into the whole gamification aspect because of how user-friendly it is and the completion of courses and modules. Completing a module felt like an achievement, and it helped me have a pathway to dive into cybersecurity, coming from a completely different world.</blockquote>
+                <p>- Jimmy Soto, SOC Security Specialist from Washington, DC - Baltimore</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section: Added based on Codecademy's "Real success from real learners" -->
-    <section class="testimonials">
-        <h2>Real success from real learners</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <p>"I feel like I’ve gained a valuable skill set that looks great on my CV."</p>
-                <p>- Joshua Lange, Research Scientist</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"I wasted quite a bit of time before learning about CodeLearn. Don’t waste any time on anyone else; just start there."</p>
-                <p>- Shabana Khatau, Systems Advisor</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"CodeLearn played into the whole gamification aspect because of how user-friendly it is."</p>
-                <p>- Jimmy Soto, Security Specialist</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section: Retained and enhanced -->
-    <section class="stats">
-        <div class="stats-grid">
-            <div class="stat-item"><h3>1000+</h3><p>Students Enrolled</p></div>
-            <div class="stat-item"><h3>10+</h3><p>Programming Languages</p></div>
-            <div class="stat-item"><h3>50+</h3><p>Course Modules</p></div>
-            <div class="stat-item"><h3>95%</h3><p>Success Rate</p></div>
-        </div>
-    </section>
-
-    <!-- Footer: Enhanced with join call-to-action similar to Codecademy -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>CodeLearn</h4>
-                <p>Empowering students to master programming languages through comprehensive, hands-on learning experiences.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Popular Courses</h4>
-                <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="#">📘</a>
-                    <a href="#">🐦</a>
-                    <a href="#">💼</a>
-                    <a href="#">📺</a>
-                </div>
-            </div>
-        </div>
-        <div class="join-cta">
-            <h3>Join the millions learning the tech skills needed to grow in their careers.</h3>
-            <a href="#signup" class="cta-button">Sign up — it's free</a>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 CodeLearn. All rights reserved.</p>
-        </div>
+    <footer class="animate-fade-in">
+        <p>Join the millions learning the tech skills needed to grow in their careers and build the lives they want.</p>
+        <button>Sign Up — It's Free</button>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Anime.js Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hero animation
+            anime({
+                targets: '#hero h1',
+                translateY: [-50, 0],
+                opacity: [0, 1],
+                duration: 1500,
+                easing: 'easeOutExpo'
+            });
+
+            anime({
+                targets: '#hero p, #hero button',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                duration: 1500,
+                delay: anime.stagger(300),
+                easing: 'easeOutExpo'
+            });
+
+            // Section animations (simple on-load, for scroll use IntersectionObserver if needed)
+            anime({
+                targets: '.animate-slide-up',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                duration: 1000,
+                delay: anime.stagger(200),
+                easing: 'easeOutQuad'
+            });
+
+            anime({
+                targets: '.animate-fade-in',
+                opacity: [0, 1],
+                duration: 2000,
+                easing: 'easeInOutSine'
+            });
+
+            // Hover animations for buttons and list items
+            document.querySelectorAll('button, #companies li').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    anime({
+                        targets: el,
+                        scale: 1.05,
+                        duration: 300,
+                        easing: 'easeOutElastic'
+                    });
+                });
+                el.addEventListener('mouseleave', () => {
+                    anime({
+                        targets: el,
+                        scale: 1,
+                        duration: 300,
+                        easing: 'easeOutElastic'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
