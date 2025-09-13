@@ -1,3 +1,5 @@
+<!-- Updated index.html: Redesigned to be more similar to Codecademy.com, with enhanced hero section, features (courses), experience sections, testimonials, and a call-to-action footer. Added placeholders for sign-up and company logos. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +12,10 @@
 
   gtag('config', 'G-0B0ZVLRY1R');
 </script>
+<!---gtag ends here--->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeLearn - Master Programming Languages</title>
+    <title>CodeLearn - Learn Programming for Free</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,18 +25,10 @@
                 <h2>CodeLearn</h2>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="courses.html" class="nav-link">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -43,117 +38,172 @@
         </div>
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1>Master Programming Languages</h1>
-                    <p class="hero-tagline">Learn coding from beginner to advanced with our comprehensive, hands-on courses designed for students of all levels.</p>
-                    <a href="courses.html" class="cta-button">Get Started</a>
-                </div>
-                <div class="hero-image">
-                    <div class="code-illustration">
-                        <div class="code-line">&lt;html&gt;</div>
-                        <div class="code-line">&nbsp;&nbsp;&lt;body&gt;</div>
-                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;</div>
-                        <div class="code-line">&nbsp;&nbsp;&lt;/body&gt;</div>
-                        <div class="code-line">&lt;/html&gt;</div>
-                    </div>
+    <!-- Hero Section: Inspired by Codecademy's hero, with skills development focus, sign-up prompt, and company logos -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Develop your skills</h1>
+                <p>Grow in your career and unlock new opportunities by learning in-demand skills in AI, data, coding, cybersecurity, and more.</p>
+                <a href="#signup" class="cta-button">Get started today</a>
+                <div class="signup-options">
+                    <p>Or sign up with</p>
+                    <button class="signup-btn">Google</button>
+                    <button class="signup-btn">Apple</button>
+                    <p>More ways to sign up</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Featured Courses Section -->
-        <section class="featured-courses">
-            <div class="container">
-                <h2>Featured Courses</h2>
-                <div class="course-grid">
-                    <div class="course-card">
-                        <div class="course-icon">🐍</div>
-                        <h3>Python Programming</h3>
-                        <p>Learn Python from basics to advanced topics including data structures, web development, and automation.</p>
-                        <a href="course-detail.html?course=python" class="course-link">Learn More</a>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-icon">⚡</div>
-                        <h3>JavaScript</h3>
-                        <p>Master JavaScript for web development, from DOM manipulation to modern ES6+ features and frameworks.</p>
-                        <a href="course-detail.html?course=javascript" class="course-link">Learn More</a>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-icon">☕</div>
-                        <h3>Java Programming</h3>
-                        <p>Build robust applications with Java, covering OOP principles, data structures, and enterprise development.</p>
-                        <a href="course-detail.html?course=java" class="course-link">Learn More</a>
-                    </div>
-                </div>
+            <div class="hero-image">
+                <!-- Placeholder for code illustration or image -->
+                <pre class="code-illustration">
+                    <code>
+                        <span class="code-line">&lt;html&gt;</span>
+                        <span class="code-line">&nbsp;&nbsp;&lt;body&gt;</span>
+                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;</span>
+                        <span class="code-line">&nbsp;&nbsp;&lt;/body&gt;</span>
+                        <span class="code-line">&lt;/html&gt;</span>
+                    </code>
+                </pre>
             </div>
-        </section>
+        </div>
+        <div class="companies">
+            <p>Our learners work at</p>
+            <ul class="company-logos">
+                <li>Meta</li>
+                <li>Microsoft</li>
+                <li>Google</li>
+                <li>Apple</li>
+                <li>Instagram</li>
+                <li>Spotify</li>
+                <li>Reddit</li>
+                <li>IBM</li>
+            </ul>
+        </div>
+    </section>
 
-        <!-- Stats Section -->
-        <section class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>1000+</h3>
-                        <p>Students Enrolled</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>10+</h3>
-                        <p>Programming Languages</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>50+</h3>
-                        <p>Course Modules</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>95%</h3>
-                        <p>Success Rate</p>
-                    </div>
-                </div>
+    <!-- Features Section: Similar to Codecademy's "No matter your goal" with course cards -->
+    <section class="featured-courses">
+        <h2>No matter your goal, we have something for you</h2>
+        <div class="course-grid">
+            <div class="course-card" data-title="Python Programming" data-category="beginner python">
+                <span class="course-icon">🐍</span>
+                <h3>Python Programming</h3>
+                <p>Learn Python from basics to advanced topics including data structures, web development, and automation.</p>
+                <a href="course-detail.html?course=python" class="course-link">Learn More</a>
             </div>
-        </section>
-    </main>
+            <div class="course-card" data-title="JavaScript" data-category="beginner javascript">
+                <span class="course-icon">⚡</span>
+                <h3>JavaScript</h3>
+                <p>Master JavaScript for web development, from DOM manipulation to modern ES6+ features and frameworks.</p>
+                <a href="course-detail.html?course=javascript" class="course-link">Learn More</a>
+            </div>
+            <div class="course-card" data-title="Java Programming" data-category="intermediate java">
+                <span class="course-icon">☕</span>
+                <h3>Java Programming</h3>
+                <p>Build robust applications with Java, covering OOP principles, data structures, and enterprise development.</p>
+                <a href="course-detail.html?course=java" class="course-link">Learn More</a>
+            </div>
+            <div class="course-card" data-title="Python Data Science" data-category="intermediate data-science">
+                <span class="course-icon">📊</span>
+                <h3>Python Data Science</h3>
+                <p>Data analysis and machine learning with Python.</p>
+                <a href="course-detail.html?course=python-data-science" class="course-link">Learn More</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Experience Section: Directly inspired by Codecademy's "Designed for progress" -->
+    <section class="experience">
+        <h2>Designed for progress</h2>
+        <div class="experience-grid">
+            <div class="experience-point">
+                <h3>Turn ambition into action</h3>
+                <p>Find guided paths and interactive lessons no matter your skill level. Fuel your growth with in-demand subjects like AI, cloud, data, cybersecurity, and more.</p>
+            </div>
+            <div class="experience-point">
+                <h3>Gain hands-on expertise</h3>
+                <p>Build portfolio-worthy projects that stand out in a competitive job market. Grow in your career with prep for industry certifications.</p>
+            </div>
+            <div class="experience-point">
+                <h3>Transform your team</h3>
+                <p>Ensure you're meeting your unique business needs with flexible content assignment. Access an exclusive admin dashboard to easily manage and track team progress.</p>
+            </div>
+            <div class="experience-point">
+                <h3>Go further together</h3>
+                <p>Get help when you need it, build your network, and learn together with access to exclusive events, clubs, study groups, and more in our global learner community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section: Added based on Codecademy's "Real success from real learners" -->
+    <section class="testimonials">
+        <h2>Real success from real learners</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"I feel like I’ve gained a valuable skill set that looks great on my CV."</p>
+                <p>- Joshua Lange, Research Scientist</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"I wasted quite a bit of time before learning about CodeLearn. Don’t waste any time on anyone else; just start there."</p>
+                <p>- Shabana Khatau, Systems Advisor</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"CodeLearn played into the whole gamification aspect because of how user-friendly it is."</p>
+                <p>- Jimmy Soto, Security Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section: Retained and enhanced -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item"><h3>1000+</h3><p>Students Enrolled</p></div>
+            <div class="stat-item"><h3>10+</h3><p>Programming Languages</p></div>
+            <div class="stat-item"><h3>50+</h3><p>Course Modules</p></div>
+            <div class="stat-item"><h3>95%</h3><p>Success Rate</p></div>
+        </div>
+    </section>
+
+    <!-- Footer: Enhanced with join call-to-action similar to Codecademy -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>CodeLearn</h4>
-                    <p>Empowering students to master programming languages through comprehensive, hands-on learning experiences.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Popular Courses</h4>
-                    <ul>
-                        <li><a href="course-detail.html?course=python">Python</a></li>
-                        <li><a href="course-detail.html?course=javascript">JavaScript</a></li>
-                        <li><a href="course-detail.html?course=java">Java</a></li>
-                        <li><a href="course-detail.html?course=sql">SQL</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Twitter">🐦</a>
-                        <a href="#" aria-label="LinkedIn">💼</a>
-                        <a href="#" aria-label="YouTube">📺</a>
-                    </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CodeLearn</h4>
+                <p>Empowering students to master programming languages through comprehensive, hands-on learning experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Courses</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                    <a href="#">💼</a>
+                    <a href="#">📺</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
-            </div>
+        </div>
+        <div class="join-cta">
+            <h3>Join the millions learning the tech skills needed to grow in their careers.</h3>
+            <a href="#signup" class="cta-button">Sign up — it's free</a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 CodeLearn. All rights reserved.</p>
         </div>
     </footer>
 
