@@ -1,111 +1,92 @@
-/* Blogs Page Styles */
-.blogs-grid-section {
-    padding: 80px 0;
-    background: #f8fafc;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0ZVLRY1R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0B0ZVLRY1R');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - CodeLearn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CodeLearn</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="blogs.html" class="nav-link active">Blogs</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-.blogs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Blogs</h1>
+                <p>Insights, tutorials, and updates from CodeLearn</p>
+            </div>
+        </section>
 
-.blog-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    border: 1px solid #e2e8f0;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
+        <section class="mission-vision">
+            <div class="container">
+                <article>
+                    <h2>Latest Posts</h2>
+                    <p>Coming soon: Stay tuned for useful blog posts on programming topics!</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-.blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-}
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeLearn</h4>
+                    <p>Empowering students to master programming languages through comprehensive, hands-on learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-.blog-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-}
-
-.blog-meta .date {
-    font-style: italic;
-}
-
-.blog-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #1e293b;
-    line-height: 1.2;
-}
-
-.blog-card p {
-    color: #64748b;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-/* Blog Detail Page Styles */
-.blog-detail-section {
-    padding: 120px 0 80px;
-    background: #f8fafc;
-}
-
-.blog-post-content {
-    background: white;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-
-.blog-post-content h1 {
-    font-size: 2.8rem;
-    color: #1e293b;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.blog-post-meta {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 0.95rem;
-    color: #64748b;
-    margin-bottom: 2rem;
-}
-
-.blog-post-meta span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.blog-post-body {
-    line-height: 1.8;
-    color: #334155;
-    font-size: 1.1rem;
-}
-
-.blog-post-body p {
-    margin-bottom: 1.5rem;
-}
-
-.blog-post-body h2 {
-    font-size: 2rem;
-    color: #2563eb;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post-body ul {
-    margin-left: 2rem;
-    list-style-type: disc;
-    margin-bottom: 1.5rem;
-}
+    <script src="script.js"></script>
+</body>
+</html>
